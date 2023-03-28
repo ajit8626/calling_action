@@ -1,0 +1,13 @@
+name: Calling
+on:
+  workflow_dispatch:
+    
+jobs:
+  function:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@v3
+
+    - name: custom action
+      uses: ajit8626/nodejsgitaction@main
